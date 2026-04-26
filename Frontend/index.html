@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>VendBot 3000</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Razorpay -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+  <h1>VEND<span>BOT</span> 3000</h1>
+</header>
+
+<div class="container">
+
+  <!-- PRODUCTS -->
+  <div id="products" class="grid"></div>
+
+  <!-- ORDER PANEL -->
+  <div class="panel">
+    <h3>Order Summary</h3>
+
+    <div id="cart"></div>
+
+    <div class="total">
+      Total: ₹<span id="total">0</span>
+    </div>
+
+    <button id="payBtn" onclick="payNow()" disabled>
+      PAY NOW
+    </button>
+
+    <button onclick="resetCart()" class="cancel">
+      Cancel
+    </button>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

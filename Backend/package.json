@@ -1,0 +1,18 @@
+{
+  "name": "vendbot-backend",
+  "version": "1.0.0",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.1",
+    "mqtt": "^4.3.8",
+    "razorpay": "^2.9.6"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "mqttClient.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
